@@ -62,7 +62,7 @@ bc_X_px = bc[X_px]
 def chisquared (model, target, error):
     total = 0
     for n, el in enumerate(model):
-        chi_sq = (target[n] - model[el])/(error[n])**2
+        chi_sq = ((target[n] - model[el])/(error[n]))**2
         total = total + chi_sq
     return total
     #print (total)
